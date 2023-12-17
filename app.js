@@ -15,7 +15,6 @@ require("./Database/connect");
 
 //MiddleWare's
 app.use(express.json());
-app.use(express.static("./dist"));
 app.use(cors({ credentials: true, origin: "http://localhost:5173" }));
 app.options("*", cors());
 app.use(upload.single("photo"));
